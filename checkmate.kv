@@ -1,0 +1,29 @@
+<GameView>:
+    BoxLayout: 
+        orientation: "vertical"
+
+        AnchorLayout:
+            anchor_x: 'center'
+            anchor_y: 'center'
+
+            Image:
+                source: 'logo.png'
+                size_hint: None, None
+                size: 100, 100
+                allow_stretch: True
+        
+        BoxLayout:
+            padding: 0, -300, 0, 0
+
+            Label:
+                text: "BAD PHONE"
+                font_size: 30
+
+        
+        Button:
+            text: "install Pie of Spies"
+            size_hint: 1, 0.5
+            bold: True
+            background_color: "#000000"
+            on_press: root.install_Pie_of_Spies()
+        
